@@ -1,5 +1,5 @@
 class dns::options (
-  $options='',
+  $named_options='',
   $forward_ips='',
 ) {
   
