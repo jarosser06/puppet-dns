@@ -1,6 +1,6 @@
 class dns::options (
-  $options      => '',
-  $forward_ips  => '',
+  $options='',
+  $forward_ips='',
 ) {
   
   file { "/etc/bind/named.conf.options":
