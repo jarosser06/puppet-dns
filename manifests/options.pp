@@ -4,6 +4,7 @@ class dns::options (
 ) {
   
   file { "/etc/bind/named.conf.options":
+    ensure  => present,
     owner   => root,
     group   => bind,
     mode    => 644,
