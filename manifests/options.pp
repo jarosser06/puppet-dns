@@ -2,7 +2,7 @@ class dns::options (
   $named_options='',
   $forward_ips='',
 ) {
-  
+ 
   file { "/etc/bind/named.conf.options":
     ensure  => present,
     owner   => root,
