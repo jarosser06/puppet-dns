@@ -1,5 +1,4 @@
 options {
-    // Puppet Generated below
     <% if !@forward_ips.empty? %>
       forwarders {
       <% @forward_ips.each do | ip | -%>
@@ -8,8 +7,8 @@ options {
       };
     <% end %>
 
-   <% @options.each do | option | -%>
-    <%= option %>;
+   <% @named_options.each do | named_option | -%>
+    <%= named_option %>;
    <% end -%>
     
 };
